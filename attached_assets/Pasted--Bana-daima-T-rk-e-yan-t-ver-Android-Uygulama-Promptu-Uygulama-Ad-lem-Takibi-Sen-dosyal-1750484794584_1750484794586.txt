@@ -1,0 +1,73 @@
+
+Bana daima Türkçe yanıt ver.
+📱 Android Uygulama Promptu (Uygulama Adı: İşlem Takibi)
+Sen dosyaları hazırla ben Android Studio da derleyip .apk yapacağım.
+Proje klasörü : C:\Yesileee\isTakip1
+
+Amaç: Telefon hafızasında CSV dosyalarıyla işlem takibi yapan, ay bazlı özet çıkarabilen, 
+WhatsApp üzerinden rapor gönderebilen ve yönetici paneli olan bir Android uygulaması.
+
+🟦 1. Ana Ekran (Giriş Menü) = Kayıt Ekranı :
+
+Alt menü: Kayıt, Özet, Arşiv, Ayarlar, Çıkış
+Uygulama açılışında özel logo animasyonu ve varsa intro sesi (tercihe bağlı)
+
+📝 Form Alanları:
+
+Tarih seçici (varsayılan bugünün tarihi)
+Ad Soyad: Kullanıcı yazacak, son kullanılan adlar otomatik olarak hatırlanacak
+Ürün Kodu: Açılır liste (ayarlar ekranından yüklenen CSV ile gelir)
+İşlem Türü: Açılır liste (örn. Saçak, Etiket, Tamir vb.)
+İşlem Ölçüsü: Açılır liste (örn. 90cm, 160cm, Q120 vb.)
+Adet
+Açıklama (isteğe bağlı)
+
+📥 Ekle Butonu:
+
+Veriler şu formatla CSV dosyasına yazılır:
+Tarih;Ad Soyad;Ürün Kodu;İşlem Türü;İşlem Ölçüsü;Adet;Açıklama
+Dosya ismi: "Ad Soyad - Ay Yıl.csv" (örnek: Ali Çelik - Ocak 2025.csv)
+CSV dosyası sadece ilk kayıt yapılınca oluşur. Ay içinde hiç kayıt yoksa dosya oluşturulmaz.
+
+🟦 2. Özet Ekranı
+
+İçinde bulunulan ayın kayıtları listelenir (csv'den çekilir)
+Her kayıt satırı silinebilir → CSV otomatik güncellenir
+"WhatsApp ile Gönder" butonu:
+O ayki CSV dosyasını seçilen kişiye ya da gruba, belirlenen mesajla gönderir
+
+🟦 3. Arşiv Ekranı
+
+Mevcut tüm CSV dosyaları listelenir
+Her dosya tek tek silinebilir
+Altta: "Bütün CSV Dosyalarını Sil" butonu
+Silmeden önce onay ekranı gösterilir
+
+🟦 4. Ayarlar Ekranı (Yönetici Paneli)
+
+🔐 Şifreli Giriş:
+Varsayılan şifre: 12345
+Şifre değiştirilebilir
+
+🏢 Firma Ayarları:
+
+Firma adı tanımlanabilir ve değiştirilebilir
+
+🧩 Veri Ayarları (Her biri ayrı ekranla açılır):
+
+Ürün Kodu
+İşlem Türü
+İşlem Ölçüsü
+Her veri kategorisi:
+CSV ile içe aktarılır
+Manuel ekleme, silme ve düzenleme yapılabilir
+CSV olarak dışa aktarılabilir (örn: UrunKodu.csv, IslemTuru.csv, IslemOlcusu.csv)
+
+🟦 6. Çıkış
+
+Her ekranda erişilebilir çıkış butonu
+Tıkladığında uygulamadan çıkış yapmadan önce onay sorar
+
+🔊 Ekstra (Opsiyonel)
+
+Uygulama açılışında bir mp4 dosyasının intro olarak gösterilmesini istiyorum. Dosyayı istediğinde yükleyeceğim.
